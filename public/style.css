@@ -1,0 +1,15 @@
+.post{
+    width:350px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    margin: 10px;
+
+}
+.container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}

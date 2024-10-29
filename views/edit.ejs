@@ -1,0 +1,42 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <form  method="POST" action="http://localhost:7878/post/<%= po.id %>?_method=PATCH">
+        <h1>Edit post:</h1>
+        <h3>Username: <%= po.username %></h3>
+        <h5>ID: <%= po.id %></h5>
+        <br>
+        <textarea name="content" placeholder="<%= po.content %>"></textarea>
+        <br>
+        <button>submit</button>
+
+    </form>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Post</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <form method="POST" action="/post/<%= po.id %>?_method=PATCH">
+        <h1>Edit post:</h1>
+        <h3>Username: <%= po.username %></h3>
+        <h5>ID: <%= po.id %></h5>
+        <br>
+        <textarea name="content"><%= po.content %></textarea>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
